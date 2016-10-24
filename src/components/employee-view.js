@@ -11,9 +11,8 @@ export default class EmployeeView extends React.Component
 	
 	renderItems()
 	{
-		const props = _.omit(this.props, 'employee');
 		return _.map( this.props.employee, ( emp, index) => <EmployeeListView key={
-			index} {...emp} {...props}/>);
+			index} {...emp}/>);
 	}
 	render()
 	{
